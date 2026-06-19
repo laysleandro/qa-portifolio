@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Small inline reset for consistency */
+        :root { box-sizing: border-box; }
+        *,*::before,*::after{box-sizing:inherit}
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand-box">
+            <div class="window-controls" aria-hidden="true">
+                <span class="control close"></span>
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+            </div>
+            <h4 class="brand">My Portfolio</h4>
+        </div>
+
+            <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="main-nav" class="main-nav" aria-hidden="true">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="translate-li">
+                        <button id="translate-btn" class="translate-btn" title="Translate to Portuguese (Brasil)" aria-pressed="false">
+                            <!-- US flag (default) -->
+                            <svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect width="20" height="14" fill="#b22234" />
+                                <g fill="#fff">
+                                    <rect y="1" width="20" height="1" />
+                                    <rect y="3" width="20" height="1" />
+                                    <rect y="5" width="20" height="1" />
+                                    <rect y="7" width="20" height="1" />
+                                    <rect y="9" width="20" height="1" />
+                                    <rect y="11" width="20" height="1" />
+                                </g>
+                                <rect width="8" height="6" fill="#3c3b6e" />
+                                <g fill="#fff">
+                                    <circle cx="1" cy="1" r="0.35" />
+                                    <circle cx="2" cy="1" r="0.35" />
+                                    <circle cx="3" cy="1" r="0.35" />
+                                    <circle cx="1.5" cy="2" r="0.35" />
+                                    <circle cx="2.5" cy="2" r="0.35" />
+                                </g>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-inner">
+                <p class="hero-label">Quality Assurance Engineer</p>
+                <h1>Vitória Leandro</h1>
+                <p class="hero-role">Quality Assurance Engineer | Test Automation | API Testing | Embedded Systems</p>
+                <p class="hero-copy">QA with 5 years of experience in software quality assurance, working on manual and exploratory testing, test automation and API validation. Experienced with web applications and embedded systems across agile development cycles.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="button button-primary">View Projects</a>
+                    <a href="https://www.linkedin.com" class="button button-secondary" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com" class="button button-secondary" target="_blank" rel="noopener">GitHub</a>
+                    <a href="#contact" class="button button-secondary">Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I am a Quality Assurance Engineer experienced in validating web applications and embedded systems.</p>
+                <p>Throughout my career, I have designed test strategies, executed functional and regression tests, analyzed requirements, investigated defects and automated critical scenarios.</p>
+                <p>I continuously seek to improve my technical skills, especially in test automation and software quality, aiming to deliver more reliable and efficient solutions.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2>My Experience</h2>
+                <div class="experience-grid">
+                    <article class="experience-card">
+                        <h3>Embedded Systems</h3>
+                        <ul>
+                            <li>Functional test execution</li>
+                            <li>Firmware validation</li>
+                            <li>Stability testing</li>
+                            <li>Defect investigation</li>
+                            <li>Integration testing</li>
+                        </ul>
+                    </article>
+                    <article class="experience-card">
+                        <h3>Web Applications</h3>
+                        <ul>
+                            <li>Functional testing</li>
+                            <li>Exploratory testing</li>
+                            <li>Regression testing</li>
+                            <li>Feature validation</li>
+                            <li>Business rule validation</li>
+                        </ul>
+                    </article>
+                    <article class="experience-card">
+                        <h3>Agile Methodologies</h3>
+                        <ul>
+                            <li>Scrum</li>
+                            <li>Kanban</li>
+                            <li>Sprint planning</li>
+                            <li>Refinement</li>
+                            <li>Daily meetings and retrospectives</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="stack" class="section">
+            <div class="container">
+                <h2>Technologies and Tools</h2>
+                <div class="stack-grid">
+                    <article class="stack-card">
+                        <h3>Testing</h3>
+                        <ul>
+                            <li>Functional Testing</li>
+                            <li>Exploratory Testing</li>
+                            <li>Regression Testing</li>
+                            <li>Smoke Testing</li>
+                            <li>Acceptance Testing</li>
+                        </ul>
+                    </article>
+                    <article class="stack-card">
+                        <h3>Automation</h3>
+                        <ul>
+                            <li>Cypress</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </article>
+                    <article class="stack-card">
+                        <h3>APIs</h3>
+                        <ul>
+                            <li>Postman</li>
+                            <li>REST API</li>
+                        </ul>
+                    </article>
+                    <article class="stack-card">
+                        <h3>Management</h3>
+                        <ul>
+                            <li>Jira</li>
+                            <li>Confluence</li>
+                        </ul>
+                    </article>
+                    <article class="stack-card">
+                        <h3>Version Control</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </article>
+                    <article class="stack-card">
+                        <h3>Database</h3>
+                        <ul>
+                            <li>SQL</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project">
+                        <h3>QA Real World Examples</h3>
+                        <p>Collection of QA artifacts based on real-world examples encountered during quality assurance processes.</p>
+                        <ul>
+                            <li>Test Cases</li>
+                            <li>Test Plans</li>
+                            <li>Bug Reports</li>
+                            <li>Exploratory Sessions</li>
+                            <li>Release Notes</li>
+                        </ul>
+                    </article>
+                    <article class="project">
+                        <h3>Cypress Automation</h3>
+                        <p>Project focused on end-to-end test automation using Cypress and JavaScript.</p>
+                        <ul>
+                            <li>Login</li>
+                            <li>Logout</li>
+                            <li>Critical flows</li>
+                            <li>Automation best practices</li>
+                            <li>Scalable structure</li>
+                        </ul>
+                    </article>
+                    <article class="project">
+                        <h3>API Testing</h3>
+                        <p>Project focused on REST API validation using Postman.</p>
+                        <ul>
+                            <li>Collections</li>
+                            <li>Environments</li>
+                            <li>Authentication tests</li>
+                            <li>Positive tests</li>
+                            <li>Negative tests</li>
+                        </ul>
+                    </article>
+                    <article class="project">
+                        <h3>Embedded Systems Testing Guide</h3>
+                        <p>Guide with strategies and approaches for testing embedded systems.</p>
+                        <ul>
+                            <li>Test strategies</li>
+                            <li>Test cases</li>
+                            <li>Critical scenarios</li>
+                            <li>Defect examples</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="approach" class="section">
+            <div class="container">
+                <h2>How I Approach Quality</h2>
+                <p>I believe quality goes beyond simply finding defects.</p>
+                <p>My role as a QA is to help build more reliable products, working with the team from requirements to delivery.</p>
+                <p>I strive to understand user needs, identify risks early, and promote a quality-driven culture throughout development.</p>
+            </div>
+        </section>
+
+        <section id="learning" class="section">
+            <div class="container">
+                <h2>Continuous Learning</h2>
+                <p>Currently deepening knowledge in:</p>
+                <ul class="simple-list">
+                    <li>JavaScript</li>
+                    <li>Cypress</li>
+                    <li>Test Automation</li>
+                    <li>API Testing</li>
+                    <li>Quality best practices</li>
+                    <li>Git version control</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2>Certifications and Courses</h2>
+                <div class="certifications-grid">
+                    <article class="cert-card">
+                        <ul>
+                            <li>Cloud Computing | AWS Discovery Day — Ka Solution</li>
+                            <li>Accredited Software Testing Fundamentals Certification (ASTFC) — AICS® - Asociación Internacional de Calidad de Software</li>
+                            <li>Algorithms and Programming Logic — Udemy</li>
+                            <li>Automated Testing with Cypress - Basic — Udemy</li>
+                            <li>Essential OKR Certification - Set goals with OKRs — feedz</li>
+                            <li>Components, Layouts and UI/UX in Android Apps — DIO</li>
+                            <li>Software Quality Fundamentals — DIO</li>
+                            <li>Introduction to Git and GitHub — DIO</li>
+                            <li>Introduction to Programming and Computational Thinking — DIO</li>
+                            <li>Introduction to Software Quality — DIO</li>
+                            <li>Automated Testing + COMPLETE Software Test Course — Udemy: Online Courses</li>
+                            <li>Jira Software: Creating Complete Projects — Udemy: Online Courses</li>
+                            <li>Exploratory Testing — Udemy: Online Courses</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Let's Talk</h2>
+                <p>I am always open to discuss software quality, test automation and professional opportunities.</p>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <h3>Email</h3>
+                        <a href="mailto:lays.leandro@hotmail.com">lays.leandro@hotmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        (function(){
+            const btn = document.querySelector('.hamburger');
+            const nav = document.getElementById('main-nav');
+            const mobileBreakpoint = 800;
+
+            function closeMobileNav() {
+                nav.classList.remove('open');
+                nav.setAttribute('aria-hidden', 'true');
+                btn.setAttribute('aria-expanded', 'false');
+            }
+
+            function updateNavOnResize() {
+                if (window.innerWidth < mobileBreakpoint) {
+                    closeMobileNav();
+                } else {
+                    nav.setAttribute('aria-hidden', 'false');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            }
+
+            btn.addEventListener('click', function(){
+                const expanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', String(!expanded));
+                nav.classList.toggle('open');
+                nav.setAttribute('aria-hidden', String(expanded));
+            });
+
+            window.addEventListener('resize', function(){
+                window.requestAnimationFrame(updateNavOnResize);
+            });
+
+            updateNavOnResize();
+        })();
+    </script>
+    <script>
+        (function(){
+            const btn = document.getElementById('translate-btn');
+            if (!btn) return;
+
+            const svgs = {
+                'en': '<svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="20" height="14" fill="#b22234" /><g fill="#fff"><rect y="1" width="20" height="1" /><rect y="3" width="20" height="1" /><rect y="5" width="20" height="1" /><rect y="7" width="20" height="1" /><rect y="9" width="20" height="1" /><rect y="11" width="20" height="1" /></g><rect width="8" height="6" fill="#3c3b6e" /><g fill="#fff"><circle cx="1" cy="1" r="0.35" /><circle cx="2" cy="1" r="0.35" /><circle cx="3" cy="1" r="0.35" /><circle cx="1.5" cy="2" r="0.35" /><circle cx="2.5" cy="2" r="0.35" /></g></svg>',
+                'pt-BR': '<svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="20" height="14" fill="#009b3a" /><polygon points="10,1 17,7 10,13 3,7" fill="#ffdf00" /><circle cx="10" cy="7" r="3" fill="#002776" /><path d="M7.2 6.8c.4.3 1 .5 2.8.5s2.4-.2 2.8-.5c-.3.6-1 1.6-2.8 1.6s-2.5-1-2.8-1.6z" fill="#fff" opacity="0.95"/></svg>'
+            };
+
+            const translations = {
+                'pt-BR': {
+                    'a[href="#about"]': 'Sobre',
+                    'a[href="#projects"]': 'Projetos',
+                    'a[href="#contact"]': 'Contato',
+                    '.brand': 'Meu Portfólio',
+                    '.hero-label': 'Engenheira de Garantia de Qualidade',
+                    '.hero-role': 'Engenharia de Qualidade | Automação de Testes | Testes de API | Sistemas Embarcados',
+                    '.hero-copy': 'QA com 5 anos de experiência em garantia da qualidade de software, atuando em testes manuais, exploratórios, automação de testes e validação de APIs. Experiência em aplicações web e sistemas embarcados, participando de todo o ciclo de desenvolvimento em ambientes ágeis.',
+                    '.button.button-primary': 'Ver Projetos',
+                    '#about h2': 'Sobre Mim',
+                    '#about p:nth-of-type(1)': 'Sou Quality Assurance Engineer com experiência na validação de aplicações web e sistemas embarcados.',
+                    '#about p:nth-of-type(2)': 'Ao longo da minha trajetória, atuei na elaboração de estratégias de teste, execução de testes funcionais e regressivos, análise de requisitos, investigação de defeitos e automação de cenários críticos.',
+                    '#about p:nth-of-type(3)': 'Tenho interesse contínuo em aprimorar minhas habilidades técnicas, especialmente em automação de testes, qualidade de software e desenvolvimento de soluções que contribuam para entregas mais confiáveis e eficientes.',
+                    '#experience h2': 'Minha Experiência',
+                    '#experience .experience-card:nth-of-type(1) h3': 'Sistemas Embarcados',
+                    '#experience .experience-card:nth-of-type(1) li:nth-of-type(1)': 'Execução de testes funcionais',
+                    '#experience .experience-card:nth-of-type(1) li:nth-of-type(2)': 'Validação de firmware',
+                    '#experience .experience-card:nth-of-type(1) li:nth-of-type(3)': 'Testes de estabilidade',
+                    '#experience .experience-card:nth-of-type(1) li:nth-of-type(4)': 'Investigação de defeitos',
+                    '#experience .experience-card:nth-of-type(1) li:nth-of-type(5)': 'Testes de integração',
+                    '#experience .experience-card:nth-of-type(2) h3': 'Aplicações Web',
+                    '#experience .experience-card:nth-of-type(2) li:nth-of-type(1)': 'Testes funcionais',
+                    '#experience .experience-card:nth-of-type(2) li:nth-of-type(2)': 'Testes exploratórios',
+                    '#experience .experience-card:nth-of-type(2) li:nth-of-type(3)': 'Testes regressivos',
+                    '#experience .experience-card:nth-of-type(2) li:nth-of-type(4)': 'Homologação de funcionalidades',
+                    '#experience .experience-card:nth-of-type(2) li:nth-of-type(5)': 'Validação de regras de negócio',
+                    '#experience .experience-card:nth-of-type(3) h3': 'Metodologias Ágeis',
+                    '#experience .experience-card:nth-of-type(3) li:nth-of-type(1)': 'Scrum',
+                    '#experience .experience-card:nth-of-type(3) li:nth-of-type(2)': 'Kanban',
+                    '#experience .experience-card:nth-of-type(3) li:nth-of-type(3)': 'Planejamento de Sprint',
+                    '#experience .experience-card:nth-of-type(3) li:nth-of-type(4)': 'Refinamento',
+                    '#experience .experience-card:nth-of-type(3) li:nth-of-type(5)': 'Daily Meetings e Retrospectivas',
+                    '#stack h2': 'Tecnologias e Ferramentas',
+                    '#stack .stack-card:nth-of-type(1) h3': 'Testes',
+                    '#stack .stack-card:nth-of-type(1) li:nth-of-type(1)': 'Testes Funcionais',
+                    '#stack .stack-card:nth-of-type(1) li:nth-of-type(2)': 'Testes Exploratórios',
+                    '#stack .stack-card:nth-of-type(1) li:nth-of-type(3)': 'Testes Regressivos',
+                    '#stack .stack-card:nth-of-type(1) li:nth-of-type(4)': 'Smoke Test',
+                    '#stack .stack-card:nth-of-type(1) li:nth-of-type(5)': 'Testes de Aceitação',
+                    '#stack .stack-card:nth-of-type(2) h3': 'Automação',
+                    '#stack .stack-card:nth-of-type(2) li:nth-of-type(1)': 'Cypress',
+                    '#stack .stack-card:nth-of-type(2) li:nth-of-type(2)': 'JavaScript',
+                    '#stack .stack-card:nth-of-type(3) h3': 'APIs',
+                    '#stack .stack-card:nth-of-type(3) li:nth-of-type(1)': 'Postman',
+                    '#stack .stack-card:nth-of-type(3) li:nth-of-type(2)': 'REST API',
+                    '#stack .stack-card:nth-of-type(4) h3': 'Gestão',
+                    '#stack .stack-card:nth-of-type(4) li:nth-of-type(1)': 'Jira',
+                    '#stack .stack-card:nth-of-type(4) li:nth-of-type(2)': 'Confluence',
+                    '#stack .stack-card:nth-of-type(5) h3': 'Versionamento',
+                    '#stack .stack-card:nth-of-type(5) li:nth-of-type(1)': 'Git',
+                    '#stack .stack-card:nth-of-type(5) li:nth-of-type(2)': 'GitHub',
+                    '#stack .stack-card:nth-of-type(6) h3': 'Banco de Dados',
+                    '#stack .stack-card:nth-of-type(6) li:nth-of-type(1)': 'SQL',
+                    '#projects h2': 'Projetos em Destaque',
+                    '#projects .project:nth-of-type(1) h3': 'Exemplos de QA do Mundo Real',
+                    '#projects .project:nth-of-type(1) p': 'Coleção de artefatos de QA baseados em situações reais encontradas durante o processo de garantia da qualidade.',
+                    '#projects .project:nth-of-type(1) li:nth-of-type(1)': 'Casos de Teste',
+                    '#projects .project:nth-of-type(1) li:nth-of-type(2)': 'Planos de Teste',
+                    '#projects .project:nth-of-type(1) li:nth-of-type(3)': 'Relatórios de Bugs',
+                    '#projects .project:nth-of-type(1) li:nth-of-type(4)': 'Sessões Exploratórias',
+                    '#projects .project:nth-of-type(1) li:nth-of-type(5)': 'Release Notes',
+                    '#projects .project:nth-of-type(2) h3': 'Automação com Cypress',
+                    '#projects .project:nth-of-type(2) p': 'Projeto focado em automação de testes end-to-end utilizando Cypress e JavaScript.',
+                    '#projects .project:nth-of-type(2) li:nth-of-type(1)': 'Login',
+                    '#projects .project:nth-of-type(2) li:nth-of-type(2)': 'Logout',
+                    '#projects .project:nth-of-type(2) li:nth-of-type(3)': 'Fluxos críticos',
+                    '#projects .project:nth-of-type(2) li:nth-of-type(4)': 'Boas práticas de automação',
+                    '#projects .project:nth-of-type(2) li:nth-of-type(5)': 'Estrutura escalável',
+                    '#projects .project:nth-of-type(3) h3': 'Testes de API',
+                    '#projects .project:nth-of-type(3) p': 'Projeto voltado para validação de APIs REST utilizando Postman.',
+                    '#projects .project:nth-of-type(3) li:nth-of-type(1)': 'Collections',
+                    '#projects .project:nth-of-type(3) li:nth-of-type(2)': 'Ambientes',
+                    '#projects .project:nth-of-type(3) li:nth-of-type(3)': 'Testes de autenticação',
+                    '#projects .project:nth-of-type(3) li:nth-of-type(4)': 'Testes positivos',
+                    '#projects .project:nth-of-type(3) li:nth-of-type(5)': 'Testes negativos',
+                    '#projects .project:nth-of-type(4) h3': 'Guia de Testes para Sistemas Embarcados',
+                    '#projects .project:nth-of-type(4) p': 'Guia de estratégias e abordagens para validação de sistemas embarcados.',
+                    '#projects .project:nth-of-type(4) li:nth-of-type(1)': 'Estratégias de teste',
+                    '#projects .project:nth-of-type(4) li:nth-of-type(2)': 'Casos de teste',
+                    '#projects .project:nth-of-type(4) li:nth-of-type(3)': 'Cenários críticos',
+                    '#projects .project:nth-of-type(4) li:nth-of-type(4)': 'Exemplos de defeitos',
+                    '#approach h2': 'Como eu Encaro a Qualidade',
+                    '#learning h2': 'Aprendizado Contínuo',
+                    '#learning p': 'Atualmente aprofundando conhecimentos em:',
+                    '#learning .simple-list li:nth-of-type(1)': 'JavaScript',
+                    '#learning .simple-list li:nth-of-type(2)': 'Cypress',
+                    '#learning .simple-list li:nth-of-type(3)': 'Automação de Testes',
+                    '#learning .simple-list li:nth-of-type(4)': 'Testes de API',
+                    '#learning .simple-list li:nth-of-type(5)': 'Boas práticas de qualidade',
+                    '#learning .simple-list li:nth-of-type(6)': 'Versionamento com Git',
+                    '#certifications h2': 'Certificações e Cursos',
+                    '#certifications .cert-card li:nth-of-type(1)': 'Computação em Nuvem | AWS Discovery Day — Ka Solution',
+                    '#certifications .cert-card li:nth-of-type(2)': 'Accredited Software Testing Fundamentals Certification (ASTFC) — AICS® - Asociación Internacional de Calidad de Software',
+                    '#certifications .cert-card li:nth-of-type(3)': 'Algoritmos e Lógica de Programação — Udemy',
+                    '#certifications .cert-card li:nth-of-type(4)': 'Testes automatizados com Cypress - Básico — Udemy',
+                    '#certifications .cert-card li:nth-of-type(5)': 'Certificação OKR Essencial - Defina metas com OKRs — feedz',
+                    '#certifications .cert-card li:nth-of-type(6)': 'Componentes, Layouts e UI/UX Em Apps Android — DIO',
+                    '#certifications .cert-card li:nth-of-type(7)': 'Fundamentos de Qualidade de Software — DIO',
+                    '#certifications .cert-card li:nth-of-type(8)': 'Introdução ao Git e ao GitHub — DIO',
+                    '#certifications .cert-card li:nth-of-type(9)': 'Introdução à Programação e Pensamento Computacional — DIO',
+                    '#certifications .cert-card li:nth-of-type(10)': 'Introdução a Qualidade de Software — DIO',
+                    '#certifications .cert-card li:nth-of-type(11)': 'Testes Automáticos + Curso COMPLETO de Testes de Software — Udemy: Online Courses',
+                    '#certifications .cert-card li:nth-of-type(12)': 'Jira Software : Criando Projetos Completos — Udemy: Online Courses',
+                    '#certifications .cert-card li:nth-of-type(13)': 'Testes Exploratórios — Udemy: Online Courses',
+                    '#contact h2': 'Vamos Conversar?',
+                    '#contact .contact-card h3': 'E-mail',
+                    'footer p': '© 2026 Meu Portfólio. Todos os direitos reservados.'
+                }
+            };
+
+            const original = {};
+            Object.keys(translations['pt-BR']).forEach(sel => {
+                const el = document.querySelector(sel);
+                if (el) original[sel] = el.textContent;
+            });
+
+            function applyLang(lang) {
+                if (lang === 'pt-BR') {
+                    Object.keys(translations['pt-BR']).forEach(sel => {
+                        const el = document.querySelector(sel);
+                        if (el) el.textContent = translations['pt-BR'][sel];
+                    });
+                    document.documentElement.lang = 'pt-BR';
+                    btn.innerHTML = svgs['pt-BR'];
+                    btn.title = 'Revert to English';
+                    btn.setAttribute('aria-pressed', 'true');
+                } else {
+                    Object.keys(original).forEach(sel => {
+                        const el = document.querySelector(sel);
+                        if (el) el.textContent = original[sel];
+                    });
+                    document.documentElement.lang = 'en';
+                    btn.innerHTML = svgs['en'];
+                    btn.title = 'Translate to Portuguese (Brasil)';
+                    btn.setAttribute('aria-pressed', 'false');
+                }
+            }
+
+            // Initialize from localStorage (default en)
+            const stored = localStorage.getItem('siteLang') || 'en';
+            applyLang(stored);
+
+            btn.addEventListener('click', function () {
+                const next = document.documentElement.lang === 'en' ? 'pt-BR' : 'en';
+                localStorage.setItem('siteLang', next);
+                applyLang(next);
+            });
+        })();
+    </script>
+</body>
+</html>
