@@ -228,7 +228,7 @@ main{
 	margin-bottom:0.5rem;
 }
 
-.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;perspective:1200px}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
 
 .project-card-link{
 	display:block;
@@ -241,39 +241,19 @@ main{
 
 .project-card-link .project{
 	height:100%;
-	position:relative;
-	overflow:hidden;
-	transition:transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
-	transform:perspective(1000px) rotateX(0) rotateY(0);
+	transition:transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .project-card-link:hover .project,
 .project-card-link:focus-visible .project{
-	transform:perspective(1000px) rotateX(8deg) rotateY(-10deg) translateY(-10px) scale(1.03);
-	box-shadow:0 30px 60px rgba(18,32,71,0.22), 0 12px 24px rgba(13,20,41,0.16);
-	border-color:rgba(27,43,74,0.28);
-	background:linear-gradient(135deg, rgba(255,255,255,0.98), rgba(234,243,255,0.98));
+	transform:translateY(-8px) rotateX(6deg) rotateY(-6deg) scale(1.02);
+	box-shadow:0 24px 50px rgba(18,32,71,0.18), 0 10px 22px rgba(13,20,41,0.12);
+	border-color:rgba(27,43,74,0.24);
 	outline:none;
 }
 
-.project-card-link:hover .project::before,
-.project-card-link:focus-visible .project::before{
-	content:"";
-	position:absolute;
-	inset:0;
-	background:linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.45) 40%, transparent 100%);
-	transform:translateX(-120%);
-	transition:transform 0.35s ease;
-	pointer-events:none;
-}
-
-.project-card-link:hover .project::before,
-.project-card-link:focus-visible .project::before{
-	transform:translateX(120%);
-}
-
 .project-card-link:active .project{
-	transform:perspective(1000px) rotateX(4deg) rotateY(-5deg) translateY(-4px) scale(0.99);
+	transform:translateY(-2px) rotateX(3deg) rotateY(-3deg) scale(0.99);
 }
 
 .site-footer{padding:2rem 0;text-align:center;color:rgba(27,43,74,0.8)}
